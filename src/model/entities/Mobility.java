@@ -107,4 +107,8 @@ public class Mobility {
 	public void setDeepWater(double deepWater) {
 		this.mobilities.replace("deepWater", deepWater);
 	}
+	
+	public int getMovementOnElement (int movement, String element) {
+		return (int)(movement*mobilities.get(element));
+	}
 }
